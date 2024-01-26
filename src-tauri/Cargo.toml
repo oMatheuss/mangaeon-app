@@ -1,11 +1,11 @@
 [package]
-name = "app"
-version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+name = "mangaeon"
+version = "1.0.0"
+description = "Manga Eon App"
+authors = ["Matheus"]
 license = ""
 repository = ""
-default-run = "app"
+default-run = "mangaeon"
 edition = "2021"
 rust-version = "1.60"
 

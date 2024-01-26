@@ -20,7 +20,7 @@ import { type FetchOptions, ResponseType, fetch } from '@tauri-apps/api/http';
 const FETCH_OPTIONS: FetchOptions = {
   method: 'GET',
   responseType: ResponseType.JSON,
-  headers: { 'User-Agent': 'MangaEon-App/0.1.0' },
+  headers: { 'User-Agent': 'MangaEon-App/1.0.0' },
 };
 
 const BASE_URL = 'https://api.mangadex.org';
