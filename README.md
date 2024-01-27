@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mangá Éon
 
-## Getting Started
+This is the port for desktop for the [mangaeon](https://mangaeon.com) page. Which can be found on this [repository](https://github.com/oMatheuss/mangaeon).
 
-First, run the development server:
+As the site, it uses the [mangadex](https://mangadex.org/) api. A big thanks to them for creating such a great manga api.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Developing
+
+The project uses static [Next.JS](https://nextjs.org/) for the frontend and [Tauri](https://tauri.app/) for the backend and for multi-platform deployment.
+
+First, you need [Rust](https://www.rust-lang.org/) and [Node](https://nodejs.org).
+
+Then, you will need the `tauri-cli` which can be installed with cargo:
+
+```console
+cargo install tauri-cli
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After, you can install the dependencies and run the project using:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```console
+npm install && cargo tauri dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributing
 
-## Learn More
+If you find any issues or something that could be improved, feel free to open an issue or make a PR at any time.
 
-To learn more about Next.js, take a look at the following resources:
+Here are some TODOS I want to have implemented:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### TODOs:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- refactor some uglie parts;
+- make the app have an language option;
+- add the offline feature;
+- custom themes;
+- custom search filters;
+- loading indicators;
